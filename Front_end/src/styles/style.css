@@ -1,0 +1,90 @@
+.chart-container {
+    width: 30%;
+    height: 350px;
+    padding: 5;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    
+  }
+.charts{
+    width: 49%;
+    height: 350px;
+    padding: 5;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    margin-right: 0;
+  }
+
+  .ch{
+    width: 70%;
+    height: 390px;
+    padding: 5;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+  }
+  .option{
+    max-height: 390px;
+    padding: 5;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  img{
+    width: 280px;
+  }
+
+.line{
+  padding: 7px;
+  background-color: rgba(128, 128, 128, 0.132);
+}
+.line2{
+  padding: 7px;
+}
+button:hover{
+  background-color: rgba(128, 128, 128, 0.329);
+}
+
+
+@media (min-width: 800px) and (max-width: 930px) {
+  .chart-container {
+    margin-left: 0;
+  }
+  .charts {
+    margin-left: 0;
+  }
+  .ch{
+    margin-left: 0;
+  }
+}
+
+
+@media(max-width:800px) {
+  .chart-container {
+    width: 95%;
+    height: 200px;
+    padding: 5;
+    margin-bottom: 30px;
+    background-color: white;
+    margin: 20px;
+    margin-left: 0;
+  }
+  
+  .charts{
+    width: 95%;
+    height: 250px;
+    padding: 5;
+    margin-bottom: 30px;
+    background-color: white;
+    margin: 20px;
+    margin-left: 0;
+  }
+  
+}

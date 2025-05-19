@@ -1,0 +1,253 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-gradient: linear-gradient(to right, #a421cd, #671d7d);
+}
+
+.chart-container {
+  width: 30%;
+  height: 350px;
+  padding: 5;
+  margin-bottom: 30px;
+  background-color: white;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  
+}
+.charts{
+  width: 49%;
+  height: 350px;
+  padding: 5;
+  margin-bottom: 30px;
+  background-color: white;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  margin-right: 0;
+}
+
+.ch{
+  width: 70%;
+  height: 390px;
+  padding: 5;
+  margin-bottom: 30px;
+  background-color: white;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+.option{
+  max-height: 390px;
+  padding: 5;
+  margin-bottom: 30px;
+  background-color: white;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+img{
+  width: 280px;
+}
+
+.line{
+padding: 7px;
+background-color: rgba(128, 128, 128, 0.132);
+}
+.line2{
+padding: 7px;
+}
+button:hover{
+background-color: rgba(128, 128, 128, 0.329);
+}
+
+
+@media (min-width: 800px) and (max-width: 930px) {
+.chart-container {
+  margin-left: 0;
+}
+.charts {
+  margin-left: 0;
+}
+.ch{
+  margin-left: 0;
+}
+}
+
+
+@media(max-width:800px) {
+.chart-container {
+  width: 95%;
+  height: 200px;
+  padding: 5;
+  margin-bottom: 30px;
+  background-color: white;
+  margin: 20px;
+  margin-left: 0;
+}
+
+.charts{
+  width: 95%;
+  height: 250px;
+  padding: 5;
+  margin-bottom: 30px;
+  background-color: white;
+  margin: 20px;
+  margin-left: 0;
+}
+
+}
+
+
+.text-gradient {
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.prism-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.prism-card::before,
+.prism-card::after {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    rgba(111, 62, 143, 0.185) 90deg,
+    transparent 180deg
+  );
+  animation: rotate 10s linear infinite;
+}
+
+.prism-card::before {
+  top: -25%;
+  left: -25%;
+  z-index: -1;
+}
+
+.prism-card::after {
+  bottom: -25%;
+  right: -25%;
+  animation-delay: -4s;
+  z-index: -1;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #50003f, #ec86e7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-10px) rotate(5deg); }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.shimmer-bg {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.014) 0%,
+    rgba(255, 255, 255, 0.2) 25%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(206, 63, 63, 0.2) 75%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  background-size: 200% 200%;
+  animation: shimmer 8s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 200% 200%; }
+}
+
+.luxury-input {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.luxury-input:focus {
+  background: rgba(240, 193, 193, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.btn-glow {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #550b30, #690264);
+  transition: all 0.3s ease;
+}
+
+.btn-glow::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.3) 0%,
+    transparent 70%
+  );
+  transform: rotate(0deg);
+  animation: rotate 8s linear infinite;
+}
+
+.btn-glow:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(114, 21, 78, 0.3);
+}
+
+.aurora {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  filter: blur(100px);
+  opacity: 0.5;
+  pointer-events: none;
+  mix-blend-mode: soft-light;
+  animation: aurora 20s linear infinite;
+}
+
+@keyframes aurora {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.2); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+.sparkle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  animation: sparkle 4s linear infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0); }
+  50% { opacity: 1; transform: scale(1); }
+}
